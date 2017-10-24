@@ -1,0 +1,30 @@
+// stylelint-disable primer/selector-no-utility
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-large {
+  font-size: $font-size-h4;
+}
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $color-utility-neutral;
+}
+
+.text-danger {
+  color: $color-utility-negative;
+}
+
+.text-muted {
+  color: $color-text-subtle;
+}
+
