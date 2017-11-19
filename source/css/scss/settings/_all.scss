@@ -60,33 +60,15 @@ $color-brand-green-dark: #3b4a20;
  *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
  */
 $color-white: #fff;
-$color-gray-02: #f7f9f9;
-$color-gray-15: #d9d9d9;
-$color-gray-35: #a5a5a5;
 $color-gray-50: #808080;
-$color-gray-65: #595959;
-$color-gray-73: #444;
-$color-gray-87: #222;
 $color-black: #000;
-
-$color-dim-50: rgba(0, 0, 0, 0.5);
-$color-dim-70: rgba(0, 0, 0, 0.7);
 
 /**
  * Utility Colors
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
-$color-utility-positive: #03804d;
-$color-utility-postitive-subtle: #d4f3e6;
-$color-utility-caution: #a59b15;
-$color-utility-caution-subtle: #fffecf;
-$color-utility-negative: #b12a0b;
-$color-utility-negative-subtle: #fdded8;
-$color-utility-neutral: #0192d0;
-$color-utility-neutral-lighten: lighten(#0192d0, 5%);
-$color-utility-neutral-darken: darken(#0192d0, 5%);
-$color-utility-neutral-subtle: #d3f2ff;
+$color-danger: #b12a0b;
 
 /*
   * Text Colors
@@ -100,33 +82,25 @@ $color-text-subtle: $color-gray-50;
  * 1) These are non-linked heading colors, such as h2, h3, etc.
  */
 $color-heading: $color-black;
-$color-heading-accent: $color-gray-87;
 
 /*
  * Text Link Colors
  * 1) These are for linked text, such as a link found within an article,
  *    navigation link, footer link, etc.
  */
-$color-text-link: $color-utility-neutral;
-$color-text-link-hover: $color-utility-neutral-lighten;
-$color-text-link-visited: $color-utility-neutral-darken;
-$color-text-link-active: $color-utility-neutral-darken;
-
-$color-text-link-light: $color-white;
-$color-text-link-light-hover: $color-white;
-$color-text-link-light-visited: $color-white;
+$color-text-link: $color-brand-green;
 
 /*
  * Border Colors
  * 1) Border colors are used as decoration or dividers, such as as a seperator
  *    for navigation items, block borders, etc.
  */
-$color-border: $color-gray-15;
+$color-border: $color-gray-50;
 
 /*
  * Body Colors
  */
-$color-body-bg: $color-gray-02;
+$color-body-bg: $color-white;
 
 /*------------------------------------*\
     #TYPOGRAPHY

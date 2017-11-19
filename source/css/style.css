@@ -110,7 +110,7 @@ body {
   line-height: 1.4;
   color: #000;
   text-align: left;
-  background-color: #f7f9f9;
+  background-color: #fff;
   overflow-y: scroll;
 }
 
@@ -236,14 +236,13 @@ sup {
 }
 
 a {
-  color: #0192d0;
+  color: #5c832f;
   text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #01a4e9;
   text-decoration: underline;
 }
 
@@ -2088,7 +2087,7 @@ template {
 }
 
 .text-primary {
-  color: #0192d0;
+  color: #5c832f;
 }
 
 .text-danger {
