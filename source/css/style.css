@@ -236,8 +236,8 @@ sup {
 }
 
 a {
-  color: #5c832f;
-  text-decoration: underline;
+  color: #009ffd;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -445,6 +445,54 @@ template {
 
 [hidden] {
   display: none !important;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0.25rem;
+  -webkit-transition: 0.2s background-color ease;
+  transition: 0.2s background-color ease;
+  border: 0.0625rem solid transparent;
+}
+
+.btn:focus, .btn:hover {
+  text-decoration: none;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #009ffd;
+}
+
+.btn--primary:focus, .btn--primary:hover {
+  background-color: #008fe4;
+}
+
+.btn--secondary {
+  color: #fff;
+  background-color: #808080;
+}
+
+.btn--secondary:focus, .btn--secondary:hover {
+  background-color: #737373;
+}
+
+.btn--danger {
+  color: #fff;
+  background-color: #b12a0b;
+}
+
+.btn--danger:focus, .btn--danger:hover {
+  background-color: #99240a;
 }
 
 .rounded {
@@ -2087,7 +2135,7 @@ template {
 }
 
 .text-primary {
-  color: #5c832f;
+  color: #009ffd;
 }
 
 .text-danger {

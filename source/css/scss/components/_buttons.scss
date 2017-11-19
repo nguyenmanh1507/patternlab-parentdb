@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  padding: $space-sm $space-md;
+
+  font-weight: $font-weight-base;
+  text-align: center;
+  white-space: nowrap;
+
+  vertical-align: middle;
+  user-select: none;
+  border-radius: $border-radius;
+  transition: $anim-speed-quick background-color $anim-ease;
+
+  @include border;
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  $buttons-variant: (
+    primary: $color-primary,
+    secondary: $color-secondary,
+    danger: $color-danger
+  );
+
+  @each $button, $bg in $buttons-variant {
+    &--#{$button} {
+      color: $color-white;
+      background-color: $bg;
+
+      @include hover-focus {
+        background-color: darken($bg, 5%);
+      }
+    }
+  }
+}

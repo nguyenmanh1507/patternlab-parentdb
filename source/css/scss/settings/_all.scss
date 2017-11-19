@@ -50,8 +50,8 @@ $grid-breakpoints: (
  *    second-tier application colors.
  *
  */
-$color-brand-green: #5c832f;
-$color-brand-green-dark: #3b4a20;
+$color-brand-azure: #009ffd;
+$color-brand-azure-dark: darken($color-brand-azure, 5%);
 
 /*
  * Neutral Colors
@@ -68,6 +68,8 @@ $color-black: #000;
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
+$color-primary: $color-brand-azure;
+$color-secondary: $color-gray-50;
 $color-danger: #b12a0b;
 
 /*
@@ -88,7 +90,7 @@ $color-heading: $color-black;
  * 1) These are for linked text, such as a link found within an article,
  *    navigation link, footer link, etc.
  */
-$color-text-link: $color-brand-green;
+$color-text-link: $color-brand-azure;
 
 /*
  * Border Colors

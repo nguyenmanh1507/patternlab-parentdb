@@ -97,8 +97,8 @@
 }
 
 // Border
-@mixin border($border-color: transparent) {
-  border: 1px solid $border-color;
+@mixin border($border-width: 1px, $border-color: transparent) {
+  border: $border-width solid $border-color;
 }
 
 // Box shadow
