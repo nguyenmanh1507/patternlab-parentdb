@@ -60,6 +60,16 @@ gulp.task('stylelint', () => {
     )
 })
 
+gulp.task('styles:compress', () => {
+  const cssnano = require('cssnano')
+
+  return gulp
+    .src('source/css/style.css')
+    .pipe($.postcss([cssnano]))
+    .pipe($.rename({ suffix: '.min' }))
+    .pipe(gulp.dest('source/css'))
+})
+
 /**
  * Normalize all paths to be plain, paths with no leading './',
  * relative to the process root, and with backslashes converted to
@@ -81,35 +91,35 @@ function normalizePath() {
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
 // JS copy
-gulp.task('pl-copy:js', function() {
+gulp.task('pl-copy:js', function () {
   return gulp
     .src('**/*.js', { cwd: normalizePath(paths().source.js) })
     .pipe(gulp.dest(normalizePath(paths().public.js)))
 })
 
 // Images copy
-gulp.task('pl-copy:img', function() {
+gulp.task('pl-copy:img', function () {
   return gulp
     .src('**/*.*', { cwd: normalizePath(paths().source.images) })
     .pipe(gulp.dest(normalizePath(paths().public.images)))
 })
 
 // Favicon copy
-gulp.task('pl-copy:favicon', function() {
+gulp.task('pl-copy:favicon', function () {
   return gulp
     .src('favicon.ico', { cwd: normalizePath(paths().source.root) })
     .pipe(gulp.dest(normalizePath(paths().public.root)))
 })
 
 // Fonts copy
-gulp.task('pl-copy:font', function() {
+gulp.task('pl-copy:font', function () {
   return gulp
     .src('*', { cwd: normalizePath(paths().source.fonts) })
     .pipe(gulp.dest(normalizePath(paths().public.fonts)))
 })
 
 // CSS Copy
-gulp.task('pl-copy:css', function() {
+gulp.task('pl-copy:css', function () {
   return gulp
     .src([
       normalizePath(paths().source.css) + '/*.css',
@@ -120,7 +130,7 @@ gulp.task('pl-copy:css', function() {
 })
 
 // Styleguide Copy everything but css
-gulp.task('pl-copy:styleguide', function() {
+gulp.task('pl-copy:styleguide', function () {
   return gulp
     .src(normalizePath(paths().source.styleguide) + '/**/!(*.css)')
     .pipe(gulp.dest(normalizePath(paths().public.root)))
@@ -128,11 +138,11 @@ gulp.task('pl-copy:styleguide', function() {
 })
 
 // Styleguide Copy and flatten css
-gulp.task('pl-copy:styleguide-css', function() {
+gulp.task('pl-copy:styleguide-css', function () {
   return gulp
     .src(normalizePath(paths().source.styleguide) + '/**/*.css')
     .pipe(
-      gulp.dest(function(file) {
+      gulp.dest(function (file) {
         //flatten anything inside the styleguide into a single output dir per http://stackoverflow.com/a/34317320/1790362
         file.path = path.join(file.base, path.basename(file.path))
         return normalizePath(path.join(paths().public.styleguide, '/css'))
@@ -187,33 +197,33 @@ gulp.task(
   )
 )
 
-gulp.task('patternlab:version', function(done) {
+gulp.task('patternlab:version', function (done) {
   patternlab.version()
   done()
 })
 
-gulp.task('patternlab:help', function(done) {
+gulp.task('patternlab:help', function (done) {
   patternlab.help()
   done()
 })
 
-gulp.task('patternlab:patternsonly', function(done) {
+gulp.task('patternlab:patternsonly', function (done) {
   patternlab.patternsonly(done, getConfiguredCleanOption())
 })
 
-gulp.task('patternlab:liststarterkits', function(done) {
+gulp.task('patternlab:liststarterkits', function (done) {
   patternlab.liststarterkits()
   done()
 })
 
-gulp.task('patternlab:loadstarterkit', function(done) {
+gulp.task('patternlab:loadstarterkit', function (done) {
   patternlab.loadstarterkit(argv.kit, argv.clean)
   done()
 })
 
 gulp.task('patternlab:build', gulp.series('pl-assets', build))
 
-gulp.task('patternlab:installplugin', function(done) {
+gulp.task('patternlab:installplugin', function (done) {
   patternlab.installplugin(argv.plugin)
   done()
 })
@@ -227,7 +237,7 @@ function getSupportedTemplateExtensions() {
   return engines.getSupportedFileExtensions()
 }
 function getTemplateWatches() {
-  return getSupportedTemplateExtensions().map(function(dotExtension) {
+  return getSupportedTemplateExtensions().map(function (dotExtension) {
     return normalizePath(paths().source.patterns, '**', '*' + dotExtension)
   })
 }
@@ -301,7 +311,7 @@ function watch() {
 
 gulp.task(
   'patternlab:connect',
-  gulp.series(function(done) {
+  gulp.series(function (done) {
     browserSync.init(
       {
         server: {
@@ -330,7 +340,7 @@ gulp.task(
           ]
         }
       },
-      function() {
+      function () {
         done()
       }
     )
