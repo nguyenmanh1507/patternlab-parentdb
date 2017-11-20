@@ -21,7 +21,8 @@ gulp.task('styles', () => {
         rootValue: 16,
         replace: true,
         propWhiteList: [],
-        selectorBlackList: [/^html$/]
+        selectorBlackList: [/^html$/],
+        unitPrecision: 10
       }),
       rucksack(),
       customMedia

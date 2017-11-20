@@ -133,11 +133,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.44141rem;
+  font-size: 2.44140625rem;
 }
 
 h2 {
-  font-size: 1.95313rem;
+  font-size: 1.953125rem;
 }
 
 h3 {
@@ -493,6 +493,26 @@ template {
 
 .btn--danger:focus, .btn--danger:hover {
   background-color: #99240a;
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #808080;
+}
+
+select.form__control:not([size]):not([multiple]) {
+  height: 2.025rem;
+}
+
+label > span {
+  font-weight: 400;
 }
 
 .rounded {
