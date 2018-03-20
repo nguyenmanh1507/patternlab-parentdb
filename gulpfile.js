@@ -29,7 +29,7 @@ gulp.task('styles', () => {
     ]
 
   return gulp
-    .src(normalizePath(paths().source.css, 'style.scss'))
+    .src(normalizePath(paths().source.scss, 'style.scss'))
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe(

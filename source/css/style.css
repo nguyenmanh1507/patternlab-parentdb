@@ -1,77 +1,3 @@
-/*------------------------------------*    #VARIABLES
-\*------------------------------------*/
-/*------------------------------------*    #COLORS
-\*------------------------------------*/
-/*
- * 1) Color variables involve a two-tier system to keep colors in sync. The
- *    first tier defines the brand and neutral colors, and the second tier
- *    defines the application of those colors.
- */
-/*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
- * Neutral Colors
- * 1) Neutral color variables use a numbered system to define variables for better maintainability.
- *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
- *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
- */
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
-/*
-  * Text Colors
-  * 1) These are non-linked text colors, such as body copy.
-  */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
- * Border Colors
- * 1) Border colors are used as decoration or dividers, such as as a seperator
- *    for navigation items, block borders, etc.
- */
-/*
- * Body Colors
- */
-/*------------------------------------*    #TYPOGRAPHY
-\*------------------------------------*/
-/*------------------------------------*    #LAYOUT
-\*------------------------------------*/
-/*------------------------------------*    #BORDERS
-\*------------------------------------*/
-/**
- * Border Width
- */
-/**
- * Border Radius
- */
-/*------------------------------------*    #ANIMATION
-\*------------------------------------*/
-/**
- * Animation Duration
- */
-/**
- * Animation Easing
- */
-/*------------------------------------*    #BREAKPOINTS
-\*------------------------------------*/
-/**
- * Breakpoints
- */
 /*------------------------------------*    #MIXINS
 \*------------------------------------*/
 /** CSS Transition
@@ -236,7 +162,7 @@ sup {
 }
 
 a {
-  color: #009ffd;
+  color: #6dd6c3;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -454,6 +380,7 @@ template {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -470,11 +397,11 @@ template {
 
 .btn--primary {
   color: #fff;
-  background-color: #009ffd;
+  background-color: #95e1d3;
 }
 
 .btn--primary:focus, .btn--primary:hover {
-  background-color: #008fe4;
+  background-color: #6dd6c3;
 }
 
 .btn--secondary {
@@ -483,16 +410,16 @@ template {
 }
 
 .btn--secondary:focus, .btn--secondary:hover {
-  background-color: #737373;
+  background-color: #676666;
 }
 
 .btn--danger {
   color: #fff;
-  background-color: #b12a0b;
+  background-color: #ff5f5f;
 }
 
 .btn--danger:focus, .btn--danger:hover {
-  background-color: #99240a;
+  background-color: #ff2c2c;
 }
 
 .form__control {
@@ -1949,7 +1876,7 @@ label > span {
 }
 
 .bg-danger {
-  background-color: #b12a0b;
+  background-color: #ff5f5f;
 }
 
 .bg-gray {
@@ -2155,11 +2082,11 @@ label > span {
 }
 
 .text-primary {
-  color: #009ffd;
+  color: #95e1d3;
 }
 
 .text-danger {
-  color: #b12a0b;
+  color: #ff5f5f;
 }
 
 .text-muted {

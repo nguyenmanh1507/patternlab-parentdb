@@ -7,6 +7,7 @@
   white-space: nowrap;
 
   vertical-align: middle;
+  cursor: pointer;
   user-select: none;
   border-radius: $border-radius;
   transition: $anim-speed-quick background-color $anim-ease;
@@ -28,7 +29,7 @@
       background-color: $bg;
 
       @include hover-focus {
-        background-color: darken($bg, 5%);
+        background-color: darken($bg, 10%);
       }
     }
   }
