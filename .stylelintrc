@@ -1,3 +1,17 @@
 {
-  "extends": "stylelint-config-primer"
+  "extends": "stylelint-config-primer",
+  "rules": {
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning",
+      "browsers": [
+        "> 5%",
+        "last 2 firefox versions",
+        "last 2 chrome versions",
+        "last 2 safari versions",
+        "last 2 edge versions",
+        "ie 11"
+      ],
+      "ignore": ["user-select-none"]
+    }]
+  }
 }

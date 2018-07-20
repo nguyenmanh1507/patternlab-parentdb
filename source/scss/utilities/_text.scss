@@ -16,15 +16,18 @@
   text-align: center;
 }
 
-.text-primary {
+.text-color-primary {
   color: $color-brand;
 }
 
-.text-danger {
+.text-color-danger {
   color: $color-danger;
 }
 
-.text-muted {
+.text-color-muted {
   color: $color-text-subtle;
 }
 
+.text-color-black {
+  color: $color-black;
+}

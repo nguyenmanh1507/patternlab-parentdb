@@ -12,8 +12,6 @@
 
     background-color: $color-white;
     border-radius: $border-radius;
-
-    @include border(1px, $color-border);
   }
 }
 
