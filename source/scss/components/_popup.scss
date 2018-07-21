@@ -1,0 +1,35 @@
+.popup {
+  position: fixed 0;
+  z-index: 10;
+
+  padding: $space-xl $space-md;
+
+  overflow-y: auto;
+  background-color: rgba($color-black, 0.2);
+
+  &__dialog {
+    position: relative;
+
+    width: 100%;
+    max-width: 525px;
+    padding: $space-lg;
+    margin: 0 auto;
+
+    background-color: $color-white;
+    border-radius: $border-radius;
+
+    &--large {
+      max-width: 800px;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+  }
+}
