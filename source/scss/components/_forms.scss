@@ -4,19 +4,33 @@
   &__control {
     display: block;
     width: 100%;
-    padding: $space-xs;
+    height: 48px;
+    padding: $space-sm $space-md;
 
     font-size: $font-size-base;
     line-height: $line-height-base;
     color: $color-text;
 
     background-color: $color-white;
+    border: 0;
     border-radius: $border-radius;
+    box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.3);
+
+    transition: box-shadow 0.3s ease-in;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.6);
+    }
   }
 }
 
 select.form__control:not([size]):not([multiple]) {
-  height: (($space-xs * 2) + ($font-size-base * $line-height-base) + 2);
+  height: 48px;
 }
 
 label > span {

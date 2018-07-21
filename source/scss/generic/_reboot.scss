@@ -1,5 +1,13 @@
 /* stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix, selector-max-type, plugin/no-unsupported-browser-features, order/properties-order, max-empty-lines, number-leading-zero, no-missing-end-of-source-newline */
 
+@font-face {
+  font-family: AvenirNext-Regular;
+  src: url("/fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNext-Regular.woff") format("woff"), url("/fonts/AvenirNext-Regular.ttf") format("truetype"), url("/fonts/AvenirNext-Regular.svg#AvenirNext-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 // Reboot
 //
 // Normalization of HTML elements, manually forked from Normalize.css to remove
@@ -293,6 +301,7 @@ figure {
 //
 
 img {
+  max-width: 100%;
   vertical-align: middle;
   border-style: unset; // Remove the border on images inside links in IE 10-.
 }

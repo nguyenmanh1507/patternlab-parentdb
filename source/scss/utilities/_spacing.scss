@@ -43,28 +43,28 @@ $spacers: (
     }
 
     // Some special margin utils
-    // .m#{$infix}-auto {
-    //   margin: auto;
-    // }
+    .m#{$infix}-auto {
+      margin: auto;
+    }
 
-    // .mt#{$infix}-auto,
-    // .my#{$infix}-auto {
-    //   margin-top: auto;
-    // }
+    .mt#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-top: auto;
+    }
 
-    // .mr#{$infix}-auto,
-    // .mx#{$infix}-auto {
-    //   margin-right: auto;
-    // }
+    .mr#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-right: auto;
+    }
 
-    // .mb#{$infix}-auto,
-    // .my#{$infix}-auto {
-    //   margin-bottom: auto;
-    // }
+    .mb#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-bottom: auto;
+    }
 
-    // .ml#{$infix}-auto,
-    // .mx#{$infix}-auto {
-    //   margin-left: auto;
-    // }
+    .ml#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-left: auto;
+    }
   }
 }

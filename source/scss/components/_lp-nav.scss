@@ -1,0 +1,12 @@
+.lp-nav {
+  display: flex;
+
+  &__link {
+    font-size: 14px;
+    color: $color-tundora;
+
+    &:not(:last-child) {
+      margin-right: $space-lg;
+    }
+  }
+}

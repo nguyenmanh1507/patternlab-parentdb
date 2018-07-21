@@ -1,0 +1,61 @@
+.lp-card {
+  position: relative;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+
+    .lp-card__body {
+      box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.6);
+    }
+
+    .lp-card__header {
+      transform: translate(-50%, -62px);
+    }
+  }
+
+  &__header {
+    position: absolute;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 112px;
+    padding: $space-sm;
+
+    background-color: $color-white;
+    border: $space-xs solid $color-azure;
+    border-radius: 50%;
+
+    transition: transform 0.3s ease-in;
+    transform: translate(-50%, -56px);
+  }
+
+  &__logo {
+    border-radius: 50%;
+  }
+
+  &__body {
+    padding: $space-xl $space-lg $space-lg;
+
+    text-align: center;
+
+    border-radius: $border-radius;
+    box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.3);
+
+    transition: box-shadow 0.3s ease-in;
+  }
+
+  &__heading {
+    margin: $space-sm 0;
+
+    font-size: $font-size-base;
+  }
+
+  &__content {
+    font-size: 14px;
+    color: $color-text-subtle;
+  }
+}

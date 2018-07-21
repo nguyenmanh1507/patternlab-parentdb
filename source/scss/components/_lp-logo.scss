@@ -1,0 +1,13 @@
+.lp-logo {
+  display: flex;
+
+  &__icon {
+    margin-right: $space-sm;
+  }
+
+  &__content {
+    font-size: 24px;
+    font-weight: 600;
+    color: $color-black;
+  }
+}

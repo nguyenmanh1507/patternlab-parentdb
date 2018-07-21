@@ -1,0 +1,27 @@
+.lp-hero {
+  display: flex;
+  align-items: center;
+  padding-bottom: $space-xl;
+
+  &__content,
+  &__image {
+    flex: 1;
+  }
+
+  &__content {
+    padding-right: $space-md;
+  }
+
+  &__heading {
+    margin-bottom: 0;
+
+    font-size: 40px;
+    color: $color-black;
+  }
+
+  &__text {
+    margin-bottom: 0;
+
+    color: $color-silver-charlice;
+  }
+}
