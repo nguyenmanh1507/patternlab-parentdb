@@ -6,9 +6,16 @@
  */
 /* stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix, selector-max-type, plugin/no-unsupported-browser-features, order/properties-order, max-empty-lines, number-leading-zero, no-missing-end-of-source-newline */
 @font-face {
-  font-family: AvenirNext-Regular;
+  font-family: AvenirNext;
   src: url("/fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNext-Regular.woff") format("woff"), url("/fonts/AvenirNext-Regular.ttf") format("truetype"), url("/fonts/AvenirNext-Regular.svg#AvenirNext-Regular") format("svg");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url("/fonts/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNext-DemiBold.woff") format("woff"), url("/fonts/AvenirNext-DemiBold.ttf") format("truetype"), url("/fonts/AvenirNext-DemiBold.svg#AvenirNext-DemiBold") format("svg");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -38,7 +45,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "AvenirNext-Regular", Arial, sans-serif;
+  font-family: AvenirNext, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -62,7 +69,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
 }
 
@@ -128,7 +135,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 dd {
@@ -256,7 +263,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 0.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 button {
@@ -426,11 +433,11 @@ template {
 
 .btn--danger {
   color: #fff;
-  background-color: #ff5f5f;
+  background-color: #d0112b;
 }
 
 .btn--danger:focus, .btn--danger:hover {
-  background-color: #ff2c2c;
+  background-color: #a10d21;
 }
 
 .btn--large {
@@ -491,6 +498,19 @@ template {
           box-shadow: 0.0625rem 0.0625rem 1.25rem rgba(149, 149, 177, 0.6);
 }
 
+.form__group {
+  position: relative;
+}
+
+.form__error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #d0112b;
+}
+
 select.form__control:not([size]):not([multiple]) {
   height: 3rem;
 }
@@ -502,6 +522,7 @@ label > span {
 .lp-card {
   position: relative;
   display: block;
+  color: #000;
 }
 
 .lp-card:hover {
@@ -563,6 +584,7 @@ label > span {
 .lp-card__heading {
   margin: 0.5rem 0;
   font-size: 1rem;
+  text-transform: none;
 }
 
 .lp-card__content {
@@ -661,7 +683,7 @@ label > span {
   position: relative;
   width: 100%;
   max-width: 32.8125rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -2214,7 +2236,7 @@ label > span {
 }
 
 .bg-danger {
-  background-color: #ff5f5f;
+  background-color: #d0112b;
 }
 
 .bg-white {
@@ -2408,7 +2430,7 @@ label > span {
 }
 
 .text-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .text-large {
@@ -2423,6 +2445,10 @@ label > span {
   font-size: 0.875rem;
 }
 
+.text-size-36 {
+  font-size: 2.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2432,7 +2458,7 @@ label > span {
 }
 
 .text-color-danger {
-  color: #ff5f5f;
+  color: #d0112b;
 }
 
 .text-color-muted {

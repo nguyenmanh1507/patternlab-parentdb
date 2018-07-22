@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
 import LandingPageForm from './LandingPageForm';
-import SelectMario from './SelectMario';
+// import SelectMario from './SelectMario';
 // import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -30,5 +30,5 @@ ReactDOM.render(
 //     ]}
 //   />,
 //   document.getElementById('select-mario')
-);
+// );
 // registerServiceWorker();

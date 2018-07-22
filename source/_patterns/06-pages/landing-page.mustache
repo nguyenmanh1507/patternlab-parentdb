@@ -13,17 +13,20 @@
 </div>
 
 <div class="container">
-  <div class="py-lg">
-    <h3 class="text-center mb-lg">All for one.
+  <div class="py-xl" id="about">
+    <h3 class="text-center mb-lg text-size-36">All for one.
       <br />And one for all.</h3>
-    <img src="/images/features@2x.png" alt="">
+    {{!-- Keep image ratio --}}
+    <div style="height: 0px; padding-bottom: 42.140151515%">
+      <img src="/images/features@2x.png" alt="">
+    </div>
   </div>
 
   <div class="py-lg">
     <div class="row">
       <div class="col-sm-6">
 
-        <h3>ParentDB is designed to be the only tool a school community will ever need</h3>
+        <h3 class="text-size-36">ParentDB is designed to be the only tool a school community will ever need</h3>
 
         <p class="text-color-muted">
           In addition to making it very easy to pay your PTA dues and renew your membership, whatever you need, we've got you covered.
@@ -44,7 +47,7 @@
             <img src="/images/icon-payment.svg" alt="">
           </div>
           <div>
-            <div class="text-large">Payment</div>
+            <div class="text-large text-bold">Payment</div>
             <div class="text-small text-color-muted">Easiest way to join the PTA and pay online</div>
           </div>
         </div>
@@ -54,7 +57,7 @@
             <img src="/images/icon-connection.svg" alt="">
           </div>
           <div>
-            <div class="text-large">Connection</div>
+            <div class="text-large text-bold">Connection</div>
             <div class="text-small text-color-muted">Get to know parents at your children's school</div>
           </div>
         </div>
@@ -64,7 +67,7 @@
             <img src="/images/icon-update.svg" alt="">
           </div>
           <div>
-            <div class="text-large">Update</div>
+            <div class="text-large text-bold">Update</div>
             <div class="text-small text-color-muted">Get updates from the community and sign up for events</div>
           </div>
         </div>
@@ -74,83 +77,12 @@
   </div>
 </div>
 
-<div class="container py-xl">
+<div class="container py-lg" id="request">
   <div id="landing-page-form"></div>
-  <form action="/" class="form">
-    <h3 class="mb-lg text-center">Request a school</h3>
-    <div class="row">
-
-      <div class="col">
-        <label for="state" class="text-small mb-md mb-md">State
-          <span class="text-color-danger">*</span>
-        </label>
-        <select name="state" id="state" class="form__control">
-          <option value="" hidden="hidden">Select your state</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-        </select>
-      </div>
-
-      <div class="col">
-        <label for="city" class="text-small mb-md">City
-          <span class="text-color-danger">*</span>
-        </label>
-        <select name="city" id="city" class="form__control">
-          <option value="" hidden="hidden">Select your city</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-          <option value="1">1</option>
-        </select>
-      </div>
-
-      <div class="col">
-        <label for="school" class="text-small mb-md">School
-          <span class="text-color-danger">*</span>
-        </label>
-        <input type="text" class="form__control" placeholder="Type your school name">
-      </div>
-    </div>
-
-    <div class="row mt-lg">
-
-      <div class="col">
-        <label for="firstname" class="text-small mb-md">First name
-          <span class="text-color-danger">*</span>
-        </label>
-        <input type="text" id="firstname" class="form__control" placeholder="e.g. Emma">
-      </div>
-
-      <div class="col">
-        <label for="lastname" class="text-small mb-md">Last name
-          <span class="text-color-danger">*</span>
-        </label>
-        <input type="text" id="lastname" class="form__control" placeholder="e.g. Wastson">
-      </div>
-
-      <div class="col">
-        <label for="email" class="text-small mb-md">Email
-          <span class="text-color-danger">*</span>
-        </label>
-        <input type="text" id="email" class="form__control" placeholder="e.g. emmawastson@email.com">
-      </div>
-
-    </div>
-
-    <div class="row mt-lg">
-      <div class="col"></div>
-      <div class="col text-center">
-        <button class="btn btn--mario btn--block text-uppercase" type="submit">Send request</button>
-      </div>
-      <div class="col"></div>
-    </div>
-  </form>
 </div>
 
-<div class="container py-xl">
-  <h3 class="text-center mb-md">Your school already registered?</h3>
+<div class="container py-xl" id="login">
+  <h3 class="text-center mb-md text-size-36">Your school already registered?</h3>
   <p class="text-center text-color-muted mb-xl">Select your school. We will redirect you to your school login site.</p>
 
   <div class="d-flex justify-content-center pt-lg">
@@ -179,12 +111,12 @@
     <div class="divider my-lg"></div>
 
     <div class="d-flex">
-      <div class="text-size-14 text-color-muted">©2018 ParentDB. All right reserved</div>
+      <div class="text-size-14">©2018 ParentDB. All right reserved</div>
 
       <div class="ml-auto">
-        <a href="#" class="ml-md text-color-muted">Privacy Policy</a>
-        <a href="#" class="ml-md text-color-muted">Contact us</a>
-        <a href="#" class="ml-md text-color-muted"> FAQs</a>
+        <a href="#" class="ml-md text-color-black">Privacy Policy</a>
+        <a href="#" class="ml-md text-color-black">Contact us</a>
+        <a href="#" class="ml-md text-color-black"> FAQs</a>
 
       </div>
     </div>
@@ -193,3 +125,4 @@
 </div>
 
 <script src="/js/landing-page-form.js"></script>
+<script src="/js/lp-nav.js"></script>

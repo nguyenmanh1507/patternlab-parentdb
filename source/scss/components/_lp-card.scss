@@ -2,6 +2,8 @@
   position: relative;
   display: block;
 
+  color: $color-black;
+
   &:hover {
     text-decoration: none;
 
@@ -52,6 +54,7 @@
     margin: $space-sm 0;
 
     font-size: $font-size-base;
+    text-transform: none;
   }
 
   &__content {

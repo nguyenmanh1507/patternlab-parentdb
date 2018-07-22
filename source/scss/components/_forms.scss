@@ -27,6 +27,20 @@
       box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.6);
     }
   }
+
+  &__group {
+    position: relative;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: $space-sm $space-md;
+
+    font-size: $font-size-h6;
+    color: $color-danger;
+  }
 }
 
 select.form__control:not([size]):not([multiple]) {
