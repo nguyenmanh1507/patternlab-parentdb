@@ -60,7 +60,7 @@ $color-heading: $color-merlin;
 $color-text-link: $color-primary;
 
 // Border colors
-// $color-border: $color-gray-50;
+$color-border: rgba($color-merlin, 0.2);
 
 // Body colors
 $color-body-bg: $color-white;
@@ -86,6 +86,7 @@ $l-max-width: 80em;
 $border: 1px;
 $border-med: $space-xs;
 $border-thick: $space-sm;
+$table-border-width: 1px;
 
 // Border radius
 $border-radius: $space-sm;

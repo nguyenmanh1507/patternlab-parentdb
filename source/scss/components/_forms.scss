@@ -26,6 +26,17 @@
     &:focus {
       box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.6);
     }
+
+    &--mario {
+      background-color: rgba($color-merlin, 0.1);
+      border-radius: 0;
+      box-shadow: none;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
   }
 
   &__group {
@@ -45,6 +56,10 @@
 
 select.form__control:not([size]):not([multiple]) {
   height: 48px;
+}
+
+textarea.form__control {
+  height: auto;
 }
 
 label > span {

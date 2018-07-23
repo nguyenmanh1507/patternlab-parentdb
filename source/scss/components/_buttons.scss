@@ -3,7 +3,7 @@
   padding: $space-md;
 
   font-size: 14px;
-  font-weight: $font-weight-base;
+  font-weight: $font-weight-bold;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -11,7 +11,6 @@
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  border-radius: $border-radius;
   transition: $anim-speed-quick background-color $anim-ease;
 
   @include border;
@@ -33,6 +32,24 @@
       @include hover-focus {
         background-color: darken($bg, 10%);
       }
+    }
+  }
+
+  &--mario {
+    border-radius: $border-radius;
+  }
+
+  &--lugi {
+    background-color: $color-white;
+    border: 1px solid $color-merlin;
+
+    transition: color 0.3s ease-in, border 0.3s ease-in;
+
+    &:hover,
+    &:focus {
+      color: $color-brand;
+
+      border-color: $color-brand;
     }
   }
 

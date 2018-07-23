@@ -1,0 +1,21 @@
+// admin-off-canavs
+.aoc {
+  display: flex;
+  min-height: 100vh;
+
+  &__aside {
+    border-right: 1px solid rgba($color-merlin, 0.2);
+  }
+
+  &__content {
+    flex-grow: 1;
+    background-color: $color-concrete;
+  }
+
+  &__content-header {
+    padding: $space-md 0;
+
+    background-color: $color-white;
+    border-bottom: 1px solid rgba($color-merlin, 0.2);
+  }
+}

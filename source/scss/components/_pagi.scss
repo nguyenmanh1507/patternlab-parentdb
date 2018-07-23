@@ -1,0 +1,40 @@
+// stylelint-disable selector-max-type, selector-no-qualifying-type
+
+.pagi {
+  display: flex;
+
+  &__item {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+
+    color: $color-text-subtle;
+
+    background-color: $color-white;
+    border: 2px solid rgba($color-merlin, 0.4);
+
+    &:not(:last-child) {
+      margin-right: $space-sm;
+    }
+
+    &.is-active {
+      color: $color-brand;
+
+      border-color: $color-brand;
+    }
+  }
+
+  button.pagi__item {
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: $color-brand;
+
+      border-color: $color-brand;
+      outline: none;
+    }
+  }
+}
