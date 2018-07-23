@@ -5,7 +5,6 @@ patternlab.json
 /sass-cache
 Thumbs.db
 .idea/
-public
 *.map
 *.log
 *.min.css

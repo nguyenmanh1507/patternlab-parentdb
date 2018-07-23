@@ -1,0 +1,127 @@
+<div class="container">
+  {{> organisms-lp-header}} {{> organisms-lp-hero}}
+</div>
+
+<div class="bg-wild-sand p-lg d-flex align-items-center justify-content-around">
+  <p class="mb-0 text-small text-color-muted text-bold">Our partners are world-class:</p>
+  <img src="/images/stanford@.png" width="110" height="24" alt="">
+  <img src="/images/caltech@.png" width="96" height="24" alt="">
+  <img src="/images/chicago@.png" width="168" height="24" alt="">
+  <img src="/images/massachusetts@.png" width="51" height="26" alt="">
+  <img src="/images/yale@.png" width="56" height="24" alt="">
+  <img src="/images/harvard@.png" width="135" height="18" alt="">
+</div>
+
+<div class="container">
+  <div class="py-xl" id="about">
+    <h3 class="text-center mb-lg text-size-36">All for one.
+      <br />And one for all.</h3>
+    {{!-- Keep image ratio --}}
+    <div style="height: 0px; padding-bottom: 42.140151515%">
+      <img src="/images/features@2x.png" alt="">
+    </div>
+  </div>
+
+  <div class="py-lg">
+    <div class="row">
+      <div class="col-sm-6">
+
+        <h3 class="text-size-36">ParentDB is designed to be the only tool a school community will ever need</h3>
+
+        <p class="text-color-muted">
+          In addition to making it very easy to pay your PTA dues and renew your membership, whatever you need, we've got you covered.
+          <br>
+          <br> Have you ever forgotten the name of another parent? Use ParentDB to look up the names and pictures of other parents, organized by the childrens classrooms. You can also create articles, post pictures, get updates from other parents, and
+          sign up for events!
+          <br>
+          <br> Wanna renew your PTA membership, it only takes a click!
+        </p>
+
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+
+        <div class="d-flex align-items-center">
+          <div class="dot mr-md">
+            <img src="/images/icon-payment.svg" alt="">
+          </div>
+          <div>
+            <div class="text-large text-bold">Payment</div>
+            <div class="text-small text-color-muted">Easiest way to join the PTA and pay online</div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mt-xl">
+          <div class="dot mr-md">
+            <img src="/images/icon-connection.svg" alt="">
+          </div>
+          <div>
+            <div class="text-large text-bold">Connection</div>
+            <div class="text-small text-color-muted">Get to know parents at your children's school</div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mt-xl">
+          <div class="dot mr-md">
+            <img src="/images/icon-update.svg" alt="">
+          </div>
+          <div>
+            <div class="text-large text-bold">Update</div>
+            <div class="text-small text-color-muted">Get updates from the community and sign up for events</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-lg" id="request">
+  <div id="landing-page-form"></div>
+</div>
+
+<div class="container py-xl" id="login">
+  <h3 class="text-center mb-md text-size-36">Your school already registered?</h3>
+  <p class="text-center text-color-muted mb-xl">Select your school. We will redirect you to your school login site.</p>
+
+  <div class="d-flex justify-content-center pt-lg">
+    {{> molecules-lp-card}}
+  </div>
+</div>
+
+<div class="bg-wild-sand py-xl">
+  <div class="container">
+
+    <div class="d-flex align-items-center">
+      {{> molecules-lp-logo}}
+      <div class="ml-auto">
+        <a href="#" target="_blank" class="text-color-black ml-md">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" target="_blank" class="text-color-black ml-md">
+          <i class="fab fa-google-plus"></i>
+        </a>
+        <a href="#" target="_blank" class="text-color-black ml-md">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="divider my-lg"></div>
+
+    <div class="d-flex">
+      <div class="text-size-14">©2018 ParentDB. All right reserved</div>
+
+      <div class="ml-auto">
+        <a href="#" class="ml-md text-color-black">Privacy Policy</a>
+        <a href="#" class="ml-md text-color-black">Contact us</a>
+        <a href="#" class="ml-md text-color-black"> FAQs</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/landing-page-form.js"></script>
+<script src="/js/lp-nav.js"></script>
