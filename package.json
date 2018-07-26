@@ -29,7 +29,8 @@
   "scripts": {
     "start": "gulp patternlab:serve",
     "postinstall": "node scripts/postinstall.js",
-    "gulp": "gulp -- "
+    "gulp": "gulp -- ",
+    "deploy:surge": "surge ./public patternlab-parentdb.surge.sh"
   },
   "license": "MIT",
   "engines": {

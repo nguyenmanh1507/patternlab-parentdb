@@ -2,7 +2,7 @@
 
 ## Docs
 
-[https://public-yvjoawcyaw.now.sh](https://public-yvjoawcyaw.now.sh)
+[http://patternlab-parentdb.surge.sh](http://patternlab-parentdb.surge.sh)
 
 ## Setup
 
