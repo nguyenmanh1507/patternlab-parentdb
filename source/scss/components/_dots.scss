@@ -8,3 +8,27 @@
   border-radius: 50%;
   box-shadow: 1px 1px 20px rgba($color-santas-gray, 0.3);
 }
+
+.dot-mario {
+  width: 14px;
+  height: 14px;
+
+  background-color: $color-cloudy;
+  border-radius: 50%;
+
+  &--1 {
+    background-color: $color-meadow;
+  }
+
+  &--2 {
+    background-color: $color-brand;
+  }
+
+  &--3 {
+    background-color: $color-fuel-yellow;
+  }
+
+  &--4 {
+    background-color: $color-azure;
+  }
+}

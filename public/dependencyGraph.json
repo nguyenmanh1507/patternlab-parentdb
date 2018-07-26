@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1532358636233,
+  "timestamp": 1532622809812,
   "graph": {
     "options": {
       "directed": true,
@@ -63,6 +63,12 @@
         }
       },
       {
+        "v": "00-atoms/02-inputs/00-input-lugin.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "00-atoms/02-inputs/00-input-mario.mustache",
         "value": {
           "compileState": "clean"
@@ -117,6 +123,54 @@
         }
       },
       {
+        "v": "00-atoms/table/_table-classes.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-classes/06-pages-admin-classes.rendered.html",
+          "lineagePattern": "pages-admin-classes"
+        }
+      },
+      {
+        "v": "00-atoms/table/_table-payments.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-payments/06-pages-admin-payments.rendered.html",
+          "lineagePattern": "pages-admin-payments"
+        }
+      },
+      {
+        "v": "00-atoms/table/_table-positions.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-positions/06-pages-admin-positions.rendered.html",
+          "lineagePattern": "pages-admin-positions"
+        }
+      },
+      {
+        "v": "00-atoms/table/_table-pta.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-pta/06-pages-admin-pta.rendered.html",
+          "lineagePattern": "pages-admin-pta"
+        }
+      },
+      {
+        "v": "00-atoms/table/_table-school-years.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-school-years/06-pages-admin-school-years.rendered.html",
+          "lineagePattern": "pages-admin-school-years"
+        }
+      },
+      {
+        "v": "00-atoms/table/_table-users.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-admin-users/06-pages-admin-users.rendered.html",
+          "lineagePattern": "pages-admin-users"
+        }
+      },
+      {
         "v": "00-atoms/table/table.mustache",
         "value": {
           "compileState": "clean",
@@ -128,8 +182,8 @@
         "v": "01-molecules/admin-nav/admin-nav.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-admin-admins/06-pages-admin-admins.rendered.html",
-          "lineagePattern": "pages-admin-admins"
+          "lineagePath": "../../patterns/06-pages-admin-users/06-pages-admin-users.rendered.html",
+          "lineagePattern": "pages-admin-users"
         }
       },
       {
@@ -169,7 +223,25 @@
         }
       },
       {
+        "v": "01-molecules/buttons/button-link.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/buttons/button-toad.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-molecules/dividers/divider.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/dots/dot-mario.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -208,8 +280,8 @@
         "v": "01-molecules/pagination/pagination.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-admin-admins/06-pages-admin-admins.rendered.html",
-          "lineagePattern": "pages-admin-admins"
+          "lineagePath": "../../patterns/06-pages-admin-users/06-pages-admin-users.rendered.html",
+          "lineagePattern": "pages-admin-users"
         }
       },
       {
@@ -301,6 +373,42 @@
         }
       },
       {
+        "v": "06-pages/admin-classes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/admin-payments.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/admin-positions.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/admin-pta.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/admin-school-years.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/admin-users.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "06-pages/landing-page.mustache",
         "value": {
           "compileState": "clean"
@@ -357,6 +465,96 @@
       },
       {
         "v": "06-pages/admin-admins.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-classes.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-classes.mustache",
+        "w": "00-atoms/table/_table-classes.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-classes.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-payments.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-payments.mustache",
+        "w": "00-atoms/table/_table-payments.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-payments.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-positions.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-positions.mustache",
+        "w": "00-atoms/table/_table-positions.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-positions.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-pta.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-pta.mustache",
+        "w": "00-atoms/table/_table-pta.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-pta.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-school-years.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-school-years.mustache",
+        "w": "00-atoms/table/_table-school-years.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-school-years.mustache",
+        "w": "01-molecules/pagination/pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-users.mustache",
+        "w": "01-molecules/admin-nav/admin-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-users.mustache",
+        "w": "00-atoms/table/_table-users.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/admin-users.mustache",
         "w": "01-molecules/pagination/pagination.mustache",
         "value": {}
       },

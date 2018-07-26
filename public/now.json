@@ -1,0 +1,10 @@
+{
+  "static": {
+    "headers": [
+      {
+        "source": "**/*.mustache",
+        "mimeType": "application/mustache"
+      }
+    ]
+  }
+}

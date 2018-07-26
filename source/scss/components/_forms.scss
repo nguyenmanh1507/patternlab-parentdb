@@ -18,6 +18,8 @@
 
     transition: box-shadow 0.3s ease-in;
 
+    appearance: none;
+
     &:focus {
       outline: none;
     }
@@ -37,10 +39,36 @@
         box-shadow: none;
       }
     }
+
+    &--lugi {
+      background-color: $color-white;
+      border: 1px solid $color-black;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:hover,
+      &:focus {
+        border-color: $color-brand;
+        box-shadow: none;
+      }
+    }
   }
 
   &__group {
     position: relative;
+  }
+
+  &__group-addon {
+    .form__control {
+      padding-left: ($space-md + $space-lg);
+    }
+  }
+
+  &__addon {
+    position: absolute;
+    top: 50%;
+    left: $space-md;
+    transform: translateY(-50%);
   }
 
   &__error {
@@ -64,4 +92,6 @@ textarea.form__control {
 
 label > span {
   font-weight: $font-weight-base;
+  cursor: pointer;
+  user-select: none;
 }

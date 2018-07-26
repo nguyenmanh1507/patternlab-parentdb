@@ -27,7 +27,6 @@
 
   &__items {
     padding: $space-md 0;
-    flex-grow: 1;
   }
 
   &__link {
@@ -40,6 +39,7 @@
     font-size: 14px;
     font-weight: $font-weight-bold;
     color: rgba($color-merlin, 0.4);
+    white-space: nowrap;
 
     &::before {
       position: absolute;
