@@ -1,31 +1,5 @@
 <div class="container">
-  <header class="lp-header bg-white">
-    <div class="lp-logo">
-      <img src="/images/logo-parentdb.svg" class="lp-logo__icon" alt="Logo">
-      <div class="lp-logo__content">parentdb</div>
-    </div>
-
-    <nav class="lp-nav" id="lp-nav">
-      <a href="#about" class="lp-nav__link">About</a>
-      <a href="#request" class="lp-nav__link">Request a school</a>
-      <a href="#login" class="lp-nav__link">Login</a>
-    </nav>
-
-  </header>
-  <section class="lp-hero">
-    <div class="lp-hero__content">
-      <h2 class="lp-hero__heading">Make schools awesome with ParentDB</h2>
-      <p class="lp-hero__text mt-lg">ParentDB is a beautiful and easy to use school management platform designed to bring out the best in your school.</p>
-      <a href="#" class="btn btn--mario px-xl mt-lg text-uppercase text-bold">Request a school for free</a>
-      <p class="lp-hero__text text-small mt-md">Your school already registered?
-        <a href="#" class="text-muted">Log in</a>
-      </p>
-    </div>
-    <div class="lp-hero__image">
-      <img src="/images/lp-hero.png" alt="Landing page hero">
-    </div>
-  </section>
-
+  {{> organisms-lp-header}} {{> organisms-lp-hero}}
 </div>
 
 <div class="bg-wild-sand p-lg d-flex align-items-center justify-content-around">
@@ -42,6 +16,7 @@
   <div class="py-xl" id="about">
     <h3 class="text-center mb-lg text-size-36">All for one.
       <br />And one for all.</h3>
+    {{!-- Keep image ratio --}}
     <div style="height: 0px; padding-bottom: 42.140151515%">
       <img src="/images/features@2x.png" alt="">
     </div>
@@ -56,8 +31,9 @@
         <p class="text-color-muted">
           In addition to making it very easy to pay your PTA dues and renew your membership, whatever you need, we've got you covered.
           <br>
-          <br> Have you ever forgotten the name of another parent? Use ParentDB to look up the names and pictures of other parents, organized by the childrens classrooms. You can also create articles, post pictures, get updates from other parents, and
-          sign up for events!
+          <br> Have you ever forgotten the name of another parent? Use ParentDB to look up the names and pictures of other parents,
+          organized by the childrens classrooms. You can also create articles, post pictures, get updates from other parents,
+          and sign up for events!
           <br>
           <br> Wanna renew your PTA membership, it only takes a click!
         </p>
@@ -102,7 +78,7 @@
 </div>
 
 <div class="container py-lg" id="request">
-  <div id="landing-page-form"></div>
+  {{> pages-lp-request-form}}
 </div>
 
 <div class="container py-xl" id="login">
@@ -110,17 +86,7 @@
   <p class="text-center text-color-muted mb-xl">Select your school. We will redirect you to your school login site.</p>
 
   <div class="d-flex justify-content-center pt-lg">
-    <a href="#" class="lp-card" style="max-width: 340px;">
-      <div class="lp-card__header">
-        <img src="/images/school-logo@2x.png" class="lp-card__logo" alt="">
-      </div>
-      <div class="lp-card__body">
-        <h4 class="lp-card__heading">The Chinese Immersion School at De Avila </h4>
-        <p class="lp-card__content">Established in 2009, this is the 5th of San Francisco’s Chinese Immersion Programs. By providing a rigorous Chinese and English academic program in a fun and supportive environment, CIS gives children the confidence, scholastic preparation, and
-          cognitive development they need to succeed in the 21st century.</p>
-      </div>
-    </a>
-
+    {{> molecules-lp-card}}
   </div>
 </div>
 
@@ -128,11 +94,7 @@
   <div class="container">
 
     <div class="d-flex align-items-center">
-      <div class="lp-logo">
-        <img src="/images/logo-parentdb.svg" class="lp-logo__icon" alt="Logo">
-        <div class="lp-logo__content">parentdb</div>
-      </div>
-
+      {{> molecules-lp-logo}}
       <div class="ml-auto">
         <a href="#" target="_blank" class="text-color-black ml-md">
           <i class="fab fa-twitter"></i>
@@ -162,5 +124,5 @@
   </div>
 </div>
 
-<script src="/js/landing-page-form.js"></script>
+{{!-- <script src="/js/landing-page-form.js"></script> --}}
 <script src="/js/lp-nav.js"></script>
