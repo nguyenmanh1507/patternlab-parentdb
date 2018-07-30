@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css?1532623202968" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532623202968" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1532968713688" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532968713688" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1532623202968" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1532623202968" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1532968713688" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1532968713688" media="all" />
 
     <!-- End Pattern Lab -->
   
@@ -53,14 +53,36 @@
   <div class="sg-pattern-example">
     <div class="popup" style="display: none">
   <div class="popup__dialog">
-    <h3>Request was successfully created!</h3>
-    <div class="text-large">Your school information</div>
-    <p class="text-color-muted">
-      Thank you for signing up! Please share your request link to get greater than 10 people at your school signed up.
-    </p>
-    <a href="http://parentdb-staging.online/signup_requests/new?school_id=4">http://parentdb-staging.online/signup_requests/new?school_id=4</a>
+    <h3 class="text-size-38 mb-lg">Request was successfully created!</h3>
+    <div class="text-large text-bold mb-md">Your school information</div>
+    <div class="mb-lg d-flex text-bold">
+      <div>
+        <div class="text-color-muted">Name</div>
+        <div class="text-color-muted">City</div>
+        <div class="text-color-muted">State</div>
+        <div class="text-color-muted">Number of requests</div>
+      </div>
+      <div class="ml-sm">
+        <div class="text-color-muted">:</div>
+        <div class="text-color-muted">:</div>
+        <div class="text-color-muted">:</div>
+        <div class="text-color-muted">:</div>
+      </div>
+      <div class="ml-lg">
+        <div>Little Smiles School</div>
+        <div>Adak</div>
+        <div>Alaska</div>
+        <div>3</div>
+      </div>
+    </div>
+    <p class="text-color-muted text-small">Thank you for signing up! Please share your request link to get greater than 10 people at your school signed up.</p>
+    <a href="http://parentdb-staging.online/signup_requests/new?school_id=4" class="text-small">http://parentdb-staging.online/signup_requests/new?school_id=4</a>
     <button type="button" class="popup__btn-close">
-      <img src="/images/icon-close-popup.svg" alt="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M.5.5l23 23M23.5.5l-23 23"></path>
+        </g>
+      </svg>
     </button>
   </div>
 </div>
@@ -112,10 +134,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1532623202968">
+<script id="pl-js-polyfill-insert-1532968713688">
   (function() {
     if (self != top) {
-      var cb = '1532623202968';
+      var cb = '1532968713688';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -125,10 +147,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1532623202968">
+<script id="pl-js-insert-1532968713688">
   (function() {
     if (self != top) {
-      var cb = '1532623202968';
+      var cb = '1532968713688';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
