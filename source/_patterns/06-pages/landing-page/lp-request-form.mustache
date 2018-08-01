@@ -2,61 +2,71 @@
   <h3 class="mb-lg text-center text-size-36">Request a school</h3>
   <div class="row">
     <div class="col">
-      <label for="state" class="text-small mb-md mb-md">State
-        <span class="text-color-danger">*</span>
-      </label>
-      <select name="state" id="state" class="form__control">
-        <option value="" hidden="">Select your state</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-      </select>
+      <div class="form_group">
+        <label for="state" class="text-small mb-md mb-md">State
+          <span class="text-color-danger">*</span>
+        </label>
+        <select name="state" id="state" class="form__control">
+          <option value="" hidden="">Select your state</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+
+      <div class="form__group mt-lg">
+        <label for="city" class="text-small mb-md">City
+          <span class="text-color-danger">*</span>
+        </label>
+        <select name="city" id="city" class="form__control">
+          <option value="" hidden="">Select your city</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+
+      <div class="form__group mt-lg">
+        <label for="school" class="text-small mb-md">School
+          <span class="text-color-danger">*</span>
+        </label>
+        <input type="text" name="school" id="school" class="form__control" placeholder="Type your school name" value="">
+      </div>
+
     </div>
     <div class="col">
-      <label for="city" class="text-small mb-md">City
-        <span class="text-color-danger">*</span>
-      </label>
-      <select name="city" id="city" class="form__control">
-        <option value="" hidden="">Select your city</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-        <option value="1">1</option>
-      </select>
+      <div class="form__group">
+        <label for="firstname" class="text-small mb-md">First name
+          <span class="text-color-danger">*</span>
+        </label>
+        <input type="text" name="firstname" id="firstname" class="form__control" placeholder="e.g. Emma" value="">
+      </div>
+
+      <div class="form__group mt-lg">
+        <label for="lastname" class="text-small mb-md">Last name
+          <span class="text-color-danger">*</span>
+        </label>
+        <input type="text" id="lastname" name="lastname" class="form__control" placeholder="e.g. Wastson" value="">
+      </div>
+
+      <div class="form__group mt-lg">
+        <label for="email" class="text-small mb-md">Email
+          <span class="text-color-danger">*</span>
+        </label>
+        <input type="text" id="email" name="email" class="form__control" placeholder="e.g. emmawastson@email.com" value="">
+      </div>
     </div>
-    <div class="col">
-      <label for="school" class="text-small mb-md">School
-        <span class="text-color-danger">*</span>
-      </label>
-      <input type="text" name="school" id="school" class="form__control" placeholder="Type your school name" value="">
-    </div>
-  </div>
-  <div class="row mt-lg">
-    <div class="col">
-      <label for="firstname" class="text-small mb-md">First name
-        <span class="text-color-danger">*</span>
-      </label>
-      <input type="text" name="firstname" id="firstname" class="form__control" placeholder="e.g. Emma" value="">
-    </div>
-    <div class="col">
-      <label for="lastname" class="text-small mb-md">Last name
-        <span class="text-color-danger">*</span>
-      </label>
-      <input type="text" id="lastname" name="lastname" class="form__control" placeholder="e.g. Wastson" value="">
-    </div>
-    <div class="col form__group">
-      <label for="email" class="text-small mb-md">Email
-        <span class="text-color-danger">*</span>
-      </label>
-      <input type="text" id="email" name="email" class="form__control" placeholder="e.g. emmawastson@email.com" value="">
-    </div>
-  </div>
-  <div class="row mt-xl">
-    <div class="col"></div>
-    <div class="col text-center">
+    <div class="col d-flex flex-column">
+      <div class="mt-lg text-color-muted mb-auto">
+        Whenever 5 parents send a request for the same school, the school will be activated.
+        <br>
+        <br>So if you register a new school that is not available on ParentDB, you may have to wait for the activation.
+        <br>
+        <br>Do not forget to share your request link for quick activation!
+      </div>
       <button class="btn btn--mario btn--block text-uppercase text-bold" type="submit">Send request</button>
     </div>
-    <div class="col"></div>
   </div>
 </form>
