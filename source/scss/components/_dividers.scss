@@ -1,3 +1,7 @@
 .divider {
   border-top: 1px solid $color-azure;
+
+  &--gray {
+    border-color: rgba($color-merlin, 0.2);
+  }
 }

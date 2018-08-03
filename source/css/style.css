@@ -617,6 +617,10 @@ template {
   border-top: 0.0625rem solid #008efa;
 }
 
+.divider--gray {
+  border-color: rgba(61, 57, 53, 0.2);
+}
+
 .dot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,6 +906,62 @@ label > span {
 
 .lp-nav__link:not(:last-child) {
   margin-right: 2rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 4rem 1rem;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: #337ab7;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.modal__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 35rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.modal__dialog--large {
+  max-width: 50rem;
+}
+
+.modal__body {
+  padding: 1rem;
+}
+
+.modal__btn-close {
+  margin-left: auto;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 .pagi {
@@ -3905,6 +3965,86 @@ label > span {
   .offset-xl-11 {
     margin-left: 91.6666666667%;
   }
+}
+
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/parentdb.css" rel="stylesheet" type="text/css" />
+     
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="parentdb" />
+     
+  3. That's it!
+  
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.parentdb {
+  border-radius: 0.5rem;
+  width: 11.25rem;
+}
+
+div.datedropper.parentdb .picker {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+div.datedropper.parentdb .pick-l {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+div.datedropper.parentdb:before,
+div.datedropper.parentdb .pick-submit,
+div.datedropper.parentdb .pick-lg-b .pick-sl:before,
+div.datedropper.parentdb .pick-m,
+div.datedropper.parentdb .pick-lg-h {
+  background-color: #337ab7;
+}
+
+div.datedropper.parentdb .pick-y.pick-jump,
+div.datedropper.parentdb .pick li span,
+div.datedropper.parentdb .pick-lg-b .pick-wke,
+div.datedropper.parentdb .pick-btn {
+  color: #337ab7;
+}
+
+div.datedropper.parentdb .picker,
+div.datedropper.parentdb .pick-l {
+  background-color: #fff;
+}
+
+div.datedropper.parentdb .picker,
+div.datedropper.parentdb .pick-arw,
+div.datedropper.parentdb .pick-l {
+  color: #4D4D4D;
+}
+
+div.datedropper.parentdb .pick-m,
+div.datedropper.parentdb .pick-m .pick-arw,
+div.datedropper.parentdb .pick-lg-h,
+div.datedropper.parentdb .pick-lg-b .pick-sl,
+div.datedropper.parentdb .pick-submit {
+  color: #FFF;
+}
+
+div.datedropper.parentdb.picker-tiny:before,
+div.datedropper.parentdb.picker-tiny .pick-m {
+  background-color: #fff;
+}
+
+div.datedropper.parentdb.picker-tiny .pick-m,
+div.datedropper.parentdb.picker-tiny .pick-m .pick-arw {
+  color: #4D4D4D;
+}
+
+div.datedropper.parentdb.picker-lkd .pick-submit {
+  background-color: #fff;
+  color: #4D4D4D;
 }
 
 /*# sourceMappingURL=style.css.map */

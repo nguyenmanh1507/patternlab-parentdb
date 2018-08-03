@@ -1,0 +1,97 @@
+<div class="modal" style="display: none;" id="modal-add-school-year">
+
+  <div class="modal__dialog">
+    <div class="modal__header">
+      <div class="modal__title">Delete school year</div>
+      <button type="button" class="modal__btn-close close-modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal__body">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <label for="name" class="text-color-muted text-size-14">Name
+            <span class="text-color-danger">*</span>
+          </label>
+        </div>
+        <div class="col-9">
+          <div class="form__group">
+            <input type="text" id="name" class="form__control form__control--lugi" placeholder="E.g. Chu Van An 2018-2019" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-md">
+        <div class="col-3">
+          <label for="start" class="text-color-muted text-size-14">Start on
+          </label>
+        </div>
+        <div class="col-9">
+          <div class="form__group form__group-addon">
+            <div class="form__addon">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <input type="text" id="start" class="form__control form__control--lugi datepicker" data-theme="parentdb" data-large-mode="true" data-large-default="true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-md">
+        <div class="col-3">
+          <label for="expires" class="text-color-muted text-size-14">Expires on</label>
+          </label>
+        </div>
+        <div class="col-9">
+          <div class="form__group form__group-addon">
+            <div class="form__addon">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <input type="text" id="expires" class="form__control form__control--lugi datepicker" data-theme="parentdb" data-large-mode="true" data-large-default="true" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <div class="mt-md">
+            <label for="current-year">
+              <input type="radio" id="current-year" name="03-radio">
+              <span>Current Year</span>
+            </label>
+            <div class="mt-xs"></div>
+            <label for="next-year">
+              <input type="radio" id="next-year" name="03-radio">
+              <span>Next Year</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-md">
+        <div class="col-3">
+          <label for="pupil-total" class="text-color-muted text-size-14">Pupils total</label>
+          </label>
+        </div>
+        <div class="col-9">
+          <div class="form__group">
+            <input type="text" id="pupil-total" class="form__control form__control--lugi" placeholder="Enter the total number of pupils"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="divider divider--gray my-md"></div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9 d-flex">
+          <button class="btn btn--primary item-fullfill mr-sm close-modal">Save</button>
+          <button class="btn btn--lugi item-fullfill ml-sm close-modal">Cancel</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
