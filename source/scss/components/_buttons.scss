@@ -1,4 +1,4 @@
-.btn {
+.p-btn {
   display: inline-block;
   padding: $space-md;
 
@@ -31,6 +31,8 @@
       background-color: $bg;
 
       @include hover-focus {
+        color: $color-white;
+
         background-color: darken($bg, 10%);
       }
     }

@@ -27,6 +27,7 @@
 }
 
 html {
+  font-size: 16px;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -452,12 +453,12 @@ template {
   background-color: transparent;
 }
 
-.admin-nav__link:hover {
+.admin-nav__link.active, .admin-nav__link:hover, .admin-nav__link:focus {
   color: #337ab7;
   text-decoration: none;
 }
 
-.admin-nav__link:hover::before {
+.admin-nav__link.active::before, .admin-nav__link:hover::before, .admin-nav__link:focus::before {
   background-color: #337ab7;
 }
 
@@ -488,7 +489,7 @@ template {
   color: rgba(61, 57, 53, 0.4);
 }
 
-.admin-nav__sub-link:hover {
+.admin-nav__sub-link.active, .admin-nav__sub-link:hover, .admin-nav__sub-link:focus {
   color: #337ab7;
   text-decoration: none;
 }
@@ -521,7 +522,7 @@ template {
   border-bottom: 0.0625rem solid rgba(61, 57, 53, 0.2);
 }
 
-.btn {
+.p-btn {
   display: inline-block;
   padding: 1rem;
   font-size: 0.875rem;
@@ -540,63 +541,67 @@ template {
   border: 0.0625rem solid transparent;
 }
 
-.btn:focus, .btn:hover {
+.p-btn:focus, .p-btn:hover {
   text-decoration: none;
 }
 
-.btn--primary {
+.p-btn--primary {
   color: #fff;
   background-color: #337ab7;
 }
 
-.btn--primary:focus, .btn--primary:hover {
+.p-btn--primary:focus, .p-btn--primary:hover {
+  color: #fff;
   background-color: #285f8f;
 }
 
-.btn--mario {
+.p-btn--mario {
   color: #fff;
   background-color: #008efa;
 }
 
-.btn--mario:focus, .btn--mario:hover {
+.p-btn--mario:focus, .p-btn--mario:hover {
+  color: #fff;
   background-color: #0071c7;
 }
 
-.btn--danger {
+.p-btn--danger {
   color: #fff;
   background-color: #d0112b;
 }
 
-.btn--danger:focus, .btn--danger:hover {
+.p-btn--danger:focus, .p-btn--danger:hover {
+  color: #fff;
   background-color: #a10d21;
 }
 
-.btn--toad {
+.p-btn--toad {
   color: #fff;
   background-color: rgba(61, 57, 53, 0.4);
 }
 
-.btn--toad:focus, .btn--toad:hover {
+.p-btn--toad:focus, .p-btn--toad:hover {
+  color: #fff;
   background-color: rgba(34, 32, 29, 0.4);
 }
 
-.btn--mario {
+.p-btn--mario {
   border-radius: 0.5rem;
 }
 
-.btn--lugi {
+.p-btn--lugi {
   background-color: #fff;
   border: 0.0625rem solid #3d3935;
   -webkit-transition: color 0.3s ease-in, border 0.3s ease-in;
   transition: color 0.3s ease-in, border 0.3s ease-in;
 }
 
-.btn--lugi:hover, .btn--lugi:focus {
+.p-btn--lugi:hover, .p-btn--lugi:focus {
   color: #337ab7;
   border-color: #337ab7;
 }
 
-.btn--link {
+.p-btn--link {
   padding: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -604,11 +609,11 @@ template {
   background-color: transparent;
 }
 
-.btn--large {
+.p-btn--large {
   padding: 1rem 2rem;
 }
 
-.btn--block {
+.p-btn--block {
   display: block;
   width: 100%;
 }
@@ -908,7 +913,7 @@ label > span {
   margin-right: 2rem;
 }
 
-.modal {
+.p-modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -920,7 +925,7 @@ label > span {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal__header {
+.p-modal__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,14 +937,14 @@ label > span {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.modal__title {
+.p-modal__title {
   font-size: 0.8rem;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
 }
 
-.modal__dialog {
+.p-modal__dialog {
   position: relative;
   width: 100%;
   max-width: 35rem;
@@ -948,15 +953,15 @@ label > span {
   border-radius: 0.5rem;
 }
 
-.modal__dialog--large {
+.p-modal__dialog--large {
   max-width: 50rem;
 }
 
-.modal__body {
+.p-modal__body {
   padding: 1rem;
 }
 
-.modal__btn-close {
+.p-modal__btn-close {
   margin-left: auto;
   color: #fff;
   cursor: pointer;
@@ -1041,20 +1046,20 @@ label > span {
   border: 0;
 }
 
-.table {
+.p-table {
   width: 100%;
   max-width: 100%;
   background-color: #fff;
 }
 
-.table th,
-.table td {
+.p-table th,
+.p-table td {
   padding: 0.5rem;
   vertical-align: top;
   border-bottom: 0.0625rem solid rgba(61, 57, 53, 0.2);
 }
 
-.table thead th {
+.p-table thead th {
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1062,15 +1067,15 @@ label > span {
   border-bottom: 0.125rem solid rgba(61, 57, 53, 0.2);
 }
 
-.table tbody {
+.p-table tbody {
   font-size: 0.875rem;
 }
 
-.table tbody + tbody {
+.p-table tbody + tbody {
   border-bottom: 0.125rem solid rgba(61, 57, 53, 0.2);
 }
 
-.table .table {
+.p-table .p-table {
   background-color: #fff;
 }
 
@@ -3965,86 +3970,6 @@ label > span {
   .offset-xl-11 {
     margin-left: 91.6666666667%;
   }
-}
-
-/*
-
-	INSTRUCTIONS ---------------------------------------------------------------------------------
-  
-  1. link this stylesheet in the head of your HTML
-  	 <link href="YOUR PATH/parentdb.css" rel="stylesheet" type="text/css" />
-     
-  2. Set the file name as data-theme attribute on your input
-  	 <input data-theme="parentdb" />
-     
-  3. That's it!
-  
-  When you run script the style will be automatically applied.
-
-*/
-div.datedropper.parentdb {
-  border-radius: 0.5rem;
-  width: 11.25rem;
-}
-
-div.datedropper.parentdb .picker {
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
-}
-
-div.datedropper.parentdb .pick-l {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
-div.datedropper.parentdb:before,
-div.datedropper.parentdb .pick-submit,
-div.datedropper.parentdb .pick-lg-b .pick-sl:before,
-div.datedropper.parentdb .pick-m,
-div.datedropper.parentdb .pick-lg-h {
-  background-color: #337ab7;
-}
-
-div.datedropper.parentdb .pick-y.pick-jump,
-div.datedropper.parentdb .pick li span,
-div.datedropper.parentdb .pick-lg-b .pick-wke,
-div.datedropper.parentdb .pick-btn {
-  color: #337ab7;
-}
-
-div.datedropper.parentdb .picker,
-div.datedropper.parentdb .pick-l {
-  background-color: #fff;
-}
-
-div.datedropper.parentdb .picker,
-div.datedropper.parentdb .pick-arw,
-div.datedropper.parentdb .pick-l {
-  color: #4D4D4D;
-}
-
-div.datedropper.parentdb .pick-m,
-div.datedropper.parentdb .pick-m .pick-arw,
-div.datedropper.parentdb .pick-lg-h,
-div.datedropper.parentdb .pick-lg-b .pick-sl,
-div.datedropper.parentdb .pick-submit {
-  color: #FFF;
-}
-
-div.datedropper.parentdb.picker-tiny:before,
-div.datedropper.parentdb.picker-tiny .pick-m {
-  background-color: #fff;
-}
-
-div.datedropper.parentdb.picker-tiny .pick-m,
-div.datedropper.parentdb.picker-tiny .pick-m .pick-arw {
-  color: #4D4D4D;
-}
-
-div.datedropper.parentdb.picker-lkd .pick-submit {
-  background-color: #fff;
-  color: #4D4D4D;
 }
 
 /*# sourceMappingURL=style.css.map */
